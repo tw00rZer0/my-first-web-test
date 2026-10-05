@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>왕복 8시간을 줄이는 방법</title>
+<style>
+  /* 색은 두 가지만: 남색(글자) + 분홍(포인트) */
+  :root { --ink: #223056; --pink: #f4a7c3; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f2f4fa; --bg: #151a2e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+    text-align: center;
+  }
+  main { max-width: 640px; padding: 48px 24px; }
+  .bar { width: 72px; height: 6px; background: var(--pink); margin: 0 auto 28px; }
+  h1 { font-size: clamp(32px, 8vw, 48px); line-height: 1.25; margin: 0 0 16px; }
+  .summary { font-size: 20px; font-weight: 600; margin: 0 0 36px; }
+  ol { list-style: none; padding: 0; margin: 0 0 40px; }
+  li { font-size: 18px; padding: 14px 0; border-top: 1px solid var(--pink); }
+  li:last-child { border-bottom: 1px solid var(--pink); }
+  .name { font-size: 16px; opacity: .75; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bar"></div>
+
+  <!-- ① 제목 한 줄 -->
+  <h1>왕복 8시간을 줄이는 방법</h1>
+
+  <!-- ② 기획 한 줄 요약 -->
+  <p class="summary">서울까지 가지 않아도, 지역 거점에서 같은 시간에 함께 봅니다.</p>
+
+  <!-- ③ 근거 세 줄 -->
+  <ol>
+    <li>① 공연을 보려면 연차를 내고 서울까지 가야 한다</li>
+    <li>② 지역 거점에서 같은 시간에 같은 공연을 함께 본다</li>
+    <li>③ 나는 7일차에 팬 8명의 이야기를 직접 모았다</li>
+  </ol>
+
+  <!-- ④ 내 이름 (가명 가능) -->
+  <p class="name">기획자 · 홍길동 (가명)</p>
+</main>
+</body>
+</html>
